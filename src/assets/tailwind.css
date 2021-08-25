@@ -3,3 +3,7 @@
 @tailwind components;
 
 @tailwind utilities;
+
+/*
+   @tailwind: directive used to inject base,comoponets and utiliteies styles
+*/
