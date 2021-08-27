@@ -3,6 +3,7 @@
   <main v-if="!loading">
     <DataTitle :text="title" :dataDate="dataDate" />
     <DataBoxes :stats="stats" />
+    <CountrySelect :countries="countries" />
   </main>
 
   <main class="flex flex-col align-center justify-center text-center" v-else>
@@ -18,10 +19,11 @@
 <script>
 import DataTitle from '../components/DataTitle.vue';
 import DataBoxes from '../components/DataBoxes.vue';
+import CountrySelect from '../components/CountrySelect.vue';
 
 export default {
   name: 'Home',
-  components: { DataTitle, DataBoxes },
+  components: { DataTitle, DataBoxes, CountrySelect },
   data() {
     return {
       loading: true,
@@ -44,7 +46,7 @@ export default {
 
     this.dataDate = data.Date;
     this.stats = data.Global;
-    this.countries= data.countries;
+    this.countries= data.Countries;
     this.loading = false;
   }
 }
