@@ -1,5 +1,5 @@
 <template>
-  <div class="grid md:grid-col-2 gap-4">
+  <div class="grid md:grid-cols-2 gap-4">
 
       <!-- Box 1 -->
 
